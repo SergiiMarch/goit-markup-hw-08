@@ -1,0 +1,24 @@
+/* колір основного текста  #212121  */
+/* вторичний колір #757575 */
+/* билий колір основного текста #FFFFFF */
+/* акцент колір кнопкі #2196F3 */
+/* прозорий білий rgba(255, 255, 255, 0.6) */
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --acent-color: #2196f3;
+  --white-text-color: #ffffff;
+  --transparent-white-color: rgba(255, 255, 255, 0.6);
+  --black-text-color: #000000;
+  --footer-color: #2f303a;
+  --color-section-command: #f5f4fa;
+  --border-header: #ececec;
+  --border-color-portfolio: #f5f4fa;
+  --hero-background-color: rgba(47, 48, 58, 0.4);
+  --background-color-icon-advantage: #f5f4fa;
+  --color-icon-command: #afb1b8;
+  --footer-background-icon: rgba(255, 255, 255, 10%);
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

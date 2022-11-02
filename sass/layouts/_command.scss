@@ -1,0 +1,92 @@
+.command {
+  background-color: var(--color-section-command);
+}
+
+.list-title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.command-list:not(:last-child) {
+  padding-right: 30px;
+}
+
+.list-item {
+  display: flex;
+  gap: 10px;
+}
+
+.command-main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--white-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.list-subtitle {
+  margin-bottom: 10px;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.list-text {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: var(--title-text-color);
+}
+
+.command-social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+}
+.command-soc-list {
+  height: 44px;
+  width: 44px;
+}
+
+.command-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+
+  color: var(--color-icon-command);
+
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--acent-color);
+    color: var(--white-text-color);
+  }
+}
+
+.icon-command {
+  fill: currentColor;
+
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--white-text-color);
+  }
+}

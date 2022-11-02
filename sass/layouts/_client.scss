@@ -1,0 +1,48 @@
+.client-titlle {
+  display: block;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.client-item {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.client-list {
+  align-items: center;
+}
+
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-icon-command);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--color-icon-command);
+
+  transition: border-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--acent-color);
+    color: var(--acent-color);
+  }
+}
+
+.icon-client {
+  width: 100%;
+  fill: currentColor;
+}
