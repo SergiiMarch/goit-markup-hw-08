@@ -56,6 +56,11 @@ ol {
   padding-left: 0;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -81,40 +86,13 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%;
+  width: 1200px;
   outline: 2px solid tomato;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-@media screen and (max-width: 480px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 
 .header {
@@ -143,6 +121,11 @@ img {
 
 .nav__link {
   color: var(--acent-color);
+}
+
+.item {
+  display: flex;
+  gap: 50px;
 }
 
 .current::after {
@@ -233,63 +216,44 @@ img {
 }
 
 .section-hero {
-  max-width: 480px;
-  min-height: 400px;
-  padding: 118px 60px;
+  max-width: 1600px;
+  min-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, var(--hero-background-color), var(--hero-background-color)), url(../images/Img.jpg);
   background-repeat: no-repeat;
-}
-@media screen and (min-width: 768px) {
-  .section-hero {
-    padding: 118px 204px;
-    max-width: 768px;
-    min-height: 400px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section-hero {
-    padding-top: 200px;
-    max-width: 1600px;
-    min-height: 600px;
-  }
 }
 
 .hero__title {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  max-width: 696px;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 42px;
+  font-size: 44px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
-}
-@media screen and (min-width: 1200px) {
-  .hero__title {
-    font-size: 44px;
-    line-height: 1.36;
-    max-width: 696px;
-  }
 }
 
 .hero__btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 24px;
+  padding: 10px 32px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  min-width: 200px;
+  min-width: 216px;
   cursor: pointer;
   color: var(--white-text-color);
-  background-color: var(--acent-color);
+  background: var(--acent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -300,36 +264,50 @@ img {
   background-color: var(--white-text-color);
 }
 
-@media screen and (min-width: 768px) {
-  .advantages-item {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-}
-
-.advantages-item__list {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .advantages-item__list {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages-item__list {
-    width: calc((100% - 60px) / 4);
-  }
-}
-
-.advantages-item__block {
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
+.advantages-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.advantages-item__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-item__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-item__list::before {
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: var(--background-color-icon-advantage);
+  border-radius: 4px;
+}
+
+.advantages-item__list:nth-child(1)::before {
+  background-image: url(../images/antenna\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-item__list:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-item__list:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-item__list:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantages-item__subtitle {
@@ -341,23 +319,12 @@ img {
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
-@media screen and (max-width: 768px) {
-  .advantages-item__subtitle {
-    text-align: center;
-  }
-}
 
 .advantages-item__text {
-  font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-@media screen and (max-width: 768px) {
-  .advantages-item__text {
-    text-align: center;
-  }
 }
 
 .box {
@@ -427,7 +394,6 @@ img {
 
 .command {
   background-color: var(--color-section-command);
-  width: 100%;
 }
 
 .list-title {
@@ -437,12 +403,6 @@ img {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-}
-
-@media screen and (min-width: 768px) {
-  .command-list {
-    width: calc((100% - 30px) / 2);
-  }
 }
 
 .command-list:not(:last-child) {
@@ -517,11 +477,8 @@ img {
 .client-titlle {
   display: block;
   margin-bottom: 50px;
-  padding-top: 60px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
-  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -530,14 +487,18 @@ img {
 .client-item {
   display: flex;
   gap: 30px;
-  padding-bottom: 60px;
-  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.client-list {
+  align-items: center;
 }
 
 .client-link {
   display: flex;
-  width: 210px;
+  width: 170px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -550,18 +511,6 @@ img {
 .client-link:hover, .client-link:focus {
   border-color: var(--acent-color);
   color: var(--acent-color);
-}
-@media screen and (min-width: 768px) {
-  .client-link {
-    width: 226px;
-    height: 92px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .client-link {
-    width: 170px;
-    height: 92px;
-  }
 }
 
 .icon-client {

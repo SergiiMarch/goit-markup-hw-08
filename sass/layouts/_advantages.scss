@@ -1,48 +1,35 @@
 .advantages-item {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
-.advantages-item__list:not(:last-child) {
-  margin-right: 30px;
-}
-.advantages-item__list:not(:last-child) {
-  margin-right: 30px;
+.advantages-item__list {
+  // margin-right: 30px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 4);
+  }
 }
 
-.advantages-item__list::before {
-  display: block;
-  content: "";
-  margin-bottom: 30px;
+// .advantages-item__list:last-child {
+//   margin-right: 0px;
+// }
 
-  width: 270px;
+.advantages-item__block {
   height: 120px;
-
-  background: var(--background-color-icon-advantage);
   border-radius: 4px;
-}
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
 
-.advantages-item__list:nth-child(1)::before {
-  background-image: url(../images/antenna\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.advantages-item__list:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.advantages-item__list:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.advantages-item__list:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .advantages-item__subtitle {
@@ -54,11 +41,20 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .advantages-item__text {
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
