@@ -8,19 +8,24 @@
   padding: 118px 60px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      var(--hero-background-color),
-      var(--hero-background-color)
-    ),
-    url(../images/Img.jpg);
+  background-image: var(--hero-gradient), url(../imghero/Header1x.jpg);
   background-repeat: no-repeat;
+
+  @include retina {
+    background-image: var(--hero-gradient), url(../imghero/Header2x.jpg);
+  }
 
   @media screen and (min-width: 768px) {
     padding: 118px 204px;
 
     max-width: 768px;
     min-height: 400px;
+
+    background-image: var(--hero-gradient), url(../imghero/Headertab1x.jpg);
+
+    @include retina {
+      background-image: var(--hero-gradient), url(../imghero/Headertab2x.jpg);
+    }
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -28,6 +33,12 @@
 
     max-width: 1600px;
     min-height: 600px;
+
+    background-image: var(--hero-gradient), url(../imghero/headerdesc1x.jpg);
+
+    @include retina {
+      background-image: var(--hero-gradient), url(../imghero/Headerdesc2x.jpg);
+    }
   }
 }
 
@@ -38,7 +49,7 @@
 
   font-weight: 900;
   font-size: 26px;
-  line-height: 42px;
+  line-height: 1.61;
 
   text-align: center;
   letter-spacing: 0.06em;

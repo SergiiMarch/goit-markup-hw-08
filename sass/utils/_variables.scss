@@ -21,4 +21,9 @@
   --footer-background-icon: rgba(255, 255, 255, 10%);
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --hero-gradient: linear-gradient(
+    to right,
+    var(--hero-background-color),
+    var(--hero-background-color)
+  );
 }

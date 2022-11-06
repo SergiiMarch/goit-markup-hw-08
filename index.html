@@ -21,7 +21,7 @@
 
   <body>
     <!--HEADER-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="nav">
           <a class="nav__text link" href="x"
@@ -61,7 +61,7 @@
           </ul>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <!----------------------------MAIN-->
     <main class="main">
@@ -74,7 +74,7 @@
         </div>
       </section>
 
-      <section class="section item">
+      <!-- <section class="section item">
         <div class="container">
           <h2 class="visually-hidden">переваги</h2>
           <ul class="advantages-item list">
@@ -127,7 +127,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>  -->
 
       <!---Секція Чим ми займаємось-->
       <!-- <section class="section box">
@@ -172,52 +172,79 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section>   -->
       <!--Секція наша команда-->
-      <!-- <section class="section command">
+      <section class="section command">
         <div class="container">
-          <h2 class="list-title">Наша команда</h2>
-          <ul class="list-item list">
-            <li class="command-list">
-              <img
-                class="list-img"
-                src="./images/imgid.jpg"
-                alt="Ігор Дем'яненко"
-                width="450"
-                height="460"
-              />
+          <h2 class="container__list-title">Наша команда</h2>
+          <ul class="container__list-item list">
+            <li class="container__command-list">
+              <picture>
+                <source
+                  srcset="
+                    ./imagecommand/ihordesc1x.jpg 1x,
+                    ./imagecommand/ihordesc2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./imagecommand/ihortab1x.jpg 1x,
+                    ./imagecommand/ihortab2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./imagecommand/igordem.jpg 1x,
+                    ./imagecommand/igor2x.jpg  2x
+                  "
+                  media="(max-width: 768px)"
+                />
+
+                <img
+                  class="list-img"
+                  src="./images/imgid.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="command-main">
-                <h3 class="list-subtitle">Ігор Дем'яненко</h3>
-                <p class="list-text">Product Designer</p>
-                <ul class="command-social">
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                <h3 class="command-main__subtitle">Ігор Дем'яненко</h3>
+                <p class="command-main__text">Product Designer</p>
+                <ul class="command-main__social">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
                         ></use>
@@ -227,46 +254,72 @@
                 </ul>
               </div>
             </li>
-            <li class="command-list">
-              <img
-                class="list-img"
-                src="./images/imgor.jpg"
-                alt="Ольга Рєпіна"
-                width="450"
-                height="460"
-              />
+            <li class="container__command-list">
+              <picture>
+                <source
+                  srcset="
+                    ./imagecommand/olgadesc1x.jpg 1x,
+                    ./imagecommand/olgadesc2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./imagecommand/olhatab1x.jpg 1x,
+                    ./imagecommand/olhatab2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./imagecommand/olga1x.jpg 1x,
+                    ./imagecommand/olga2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  class="list-img"
+                  src="./images/imgor.jpg"
+                  alt="Ольга Рєпіна"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="command-main">
-                <h3 class="list-subtitle">Ольга Рєпіна</h3>
-                <p class="list-text">Frontend Developer</p>
-                <ul class="command-social">
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                <h3 class="command-main__subtitle">Ольга Рєпіна</h3>
+                <p class="command-main__text">Frontend Developer</p>
+                <ul class="command-main__social">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
                         ></use>
@@ -276,46 +329,72 @@
                 </ul>
               </div>
             </li>
-            <li class="command-list">
-              <img
-                class="list-img"
-                src="./images/imgmt.jpg"
-                alt="Микола Тарасов"
-                width="450"
-                height="460"
-              />
+            <li class="container__command-list">
+              <picture>
+                <source
+                  srcset="
+                    ./imagecommand/mikoladesc1x.jpg 1x,
+                    ./imagecommand/mikoladesc2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./imagecommand/mikolatab1x.jpg 1x,
+                    ./imagecommand/mikolatab2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./imagecommand/mikola1x.jpg 1x,
+                    ./imagecommand/mikola2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  class="list-img"
+                  src="./images/imgmt.jpg"
+                  alt="Микола Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="command-main">
-                <h3 class="list-subtitle">Микола Тарасов</h3>
-                <p class="list-text">Marketing</p>
-                <ul class="command-social">
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                <h3 class="command-main__subtitle">Микола Тарасов</h3>
+                <p class="command-main__text">Marketing</p>
+                <ul class="command-main__social">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
                         ></use>
@@ -325,46 +404,72 @@
                 </ul>
               </div>
             </li>
-            <li class="command-list">
-              <img
-                class="list-img"
-                src="./images/imgme.jpg"
-                alt="Михайло Єрмаков"
-                width="450"
-                height="460"
-              />
+            <li class="container__command-list">
+              <picture>
+                <source
+                  srcset="
+                    ./imagecommand/mihailodesc1x.jpg 1x,
+                    ./imagecommand/mihailodesc2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./imagecommand/mihailotab1x.jpg 1x,
+                    ./imagecommand/mihailotab2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./imagecommand/mihailo1x.jpg 1x,
+                    ./imagecommand/mihailo2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  class="list-img"
+                  src="./images/imgme.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="command-main">
-                <h3 class="list-subtitle">Михайло Єрмаков</h3>
-                <p class="list-text">UI Designer</p>
-                <ul class="command-social">
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                <h3 class="command-main__subtitle">Михайло Єрмаков</h3>
+                <p class="command-main__text">UI Designer</p>
+                <ul class="command-main__social">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="command-soc-list">
-                    <a class="command-soc-link" href="">
-                      <svg class="icon-command" width="20" height="20">
+                  <li class="command-main__list">
+                    <a class="command-main__link" href="">
+                      <svg class="command-main__icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
                         ></use>
@@ -376,9 +481,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+
       <!--------------------------------section client----------------------------->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="client-titlle">Постійні клієнти</h2>
           <ul class="client-item">
@@ -426,10 +532,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <!--FOOTER-->
+    FOOTER
     <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-block">
