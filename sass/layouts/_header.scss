@@ -136,6 +136,10 @@
   margin-bottom: 0;
 }
 
+.navigation {
+  margin-bottom: 50px;
+}
+
 .nav-item__link {
   font-weight: 500;
   font-size: 40px;
@@ -231,6 +235,10 @@
 }
 
 .header-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   padding-left: 40px;
   padding: 40px;
   display: block;
