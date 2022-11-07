@@ -41,16 +41,40 @@
           </ul>
         </nav>
 
+        <div class="page-list">
+          <ul class="contacts list">
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-tel"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
         <div class="page-list"></div>
-        <button type="button" class="modal-button" data-modal-open>
+        <button type="button" class="modal-button" data-headermodal-open>
           <svg class="modal-class-icon" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
           </svg>
         </button>
 
-        <div class="header-backdrop" data-modal>
-          <div class="header-modal">
-            <button type="button" class="modal-button-close" data-modal-close>
+        <div class="header-backdrop" data-headermodal>
+          <div class="headermodal">
+            <button
+              type="button"
+              class="modal-button-close"
+              data-headermodal-close
+            >
               <svg class="modal-class-icon" width="40" height="40">
                 <use href="./images/symbol-defs.svg#icon-close-black"></use>
               </svg>
@@ -669,7 +693,7 @@
     </footer>
 
     <!-- --------------------------bacdrop -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-class-icon" width="18" height="18">
@@ -728,7 +752,8 @@
           <button type="submit" class="form-buttom">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/headermodal.js"></script>
   </body>
 </html>
