@@ -48,7 +48,7 @@
   margin-bottom: 30px;
 
   font-weight: 900;
-  font-size: 26px;
+  font-size: 14px;
   line-height: 1.61;
 
   text-align: center;
@@ -56,6 +56,11 @@
   text-transform: uppercase;
 
   color: var(--white-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.61;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
@@ -77,7 +82,7 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   // min-width: 216px;
-  min-width: 200px;
+  min-width: 160px;
 
   cursor: pointer;
   color: var(--white-text-color);
@@ -93,5 +98,8 @@
   &:focus {
     color: var(--acent-color);
     background-color: var(--white-text-color);
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 200px;
   }
 }

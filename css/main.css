@@ -118,6 +118,7 @@ img {
 
 .header {
   border-bottom: 1px solid var(--border-header);
+  background-color: aqua;
 }
 
 .header-container {
@@ -144,6 +145,11 @@ img {
   color: var(--acent-color);
 }
 
+.item {
+  display: none;
+  gap: 50px;
+}
+
 .current::after {
   content: "";
   display: block;
@@ -154,9 +160,9 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  /* position: absolute;
-    bottom: 0;
-    left: 0; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .item__link {
@@ -174,7 +180,7 @@ img {
 }
 
 .page-list {
-  display: flex;
+  display: none;
   margin-left: auto;
   align-items: center;
 }
@@ -225,10 +231,19 @@ img {
 }
 
 .contacts__icon {
-  box-sizing: border-box;
   fill: currentColor;
   margin-right: 10px;
   margin-bottom: 0;
+}
+
+.nav__text {
+  padding: 24px 0;
+  margin-right: 93px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--black-text-color);
 }
 
 .section-hero {
@@ -277,12 +292,18 @@ img {
   margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 14px;
   line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.61;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -302,7 +323,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  min-width: 200px;
+  min-width: 160px;
   cursor: pointer;
   color: var(--white-text-color);
   background-color: var(--acent-color);
@@ -314,6 +335,11 @@ img {
 .hero__btn:hover, .hero__btn:focus {
   color: var(--acent-color);
   background-color: var(--white-text-color);
+}
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    min-width: 200px;
+  }
 }
 
 @media screen and (min-width: 768px) {
