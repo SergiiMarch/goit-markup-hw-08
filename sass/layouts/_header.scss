@@ -1,6 +1,5 @@
 .header {
   border-bottom: 1px solid var(--border-header);
-  background-color: aqua;
 }
 
 .header-container {
@@ -9,8 +8,8 @@
 }
 
 .nav {
-  display: flex;
-
+  // display: flex;
+  display: none;
   align-items: center;
 }
 
@@ -31,8 +30,8 @@
 }
 
 .item {
-  // display: flex;
-  display: none;
+  display: flex;
+
   gap: 50px;
 }
 
@@ -149,48 +148,105 @@
   color: var(--black-text-color);
 }
 
-// .nav__link {
-//   color: var(--acent-color);
+// .modal-button {
 // }
-// .menu-open-btn {
-//   display: flex;
-//   align-items: center;
-//   margin-left: auto;
-//   z-index: 1;
+// .modal-class-icon {
+//   display: block;
 // }
-
-// .mob-menu {
+// .header-modal {
+//   display: block;
 //   position: fixed;
-//   top: 0;
-//   background-color: white;
 //   width: 100vw;
 //   height: 100vw;
-//   padding-top: 48px;
-//   padding-bottom: 48px;
+//   background-color: white;
 // }
-// .mob-menu_close-btn {
-//   display: block;
-//   margin-left: auto;
-//   background-color: transparent;
-//   border: none;
+// .modal-button-close {
 // }
-.mob-item {
-}
-.list {
-}
-.mob-item__list {
-}
-.mob-item__link {
-}
-.current {
-}
-.link {
-}
+
 .contact {
+  display: flex;
+  gap: 50px;
 }
+
 .contact__item {
+  display: flex;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
 }
+
 .contact__link {
+  display: flex;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
 }
+
 .contact__icon {
+  //   box-sizing: border-box;
+  fill: currentColor;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.header-backdrop {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding: 48px 40px;
+}
+
+.header-modal {
+  padding-left: 40px;
+  padding: 40px;
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+
+  background-color: var(--white-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-button-close {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+  fill: currentColor;
 }

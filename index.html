@@ -22,14 +22,11 @@
   <body>
     <!--HEADER-->
     <header class="header">
-      <a class="nav__text link" href="x"
-        ><span class="nav__link">Web</span>Studio</a
-      >
       <div class="container header-container">
+        <a class="nav__text link" href="x"
+          ><span class="nav__link">Web</span>Studio</a
+        >
         <nav class="nav">
-          <a class="nav__text link" href="x"
-            ><span class="nav__link">Web</span>Studio</a
-          >
           <ul class="item list">
             <li class="item__list">
               <a class="item__link current link" href="x">Студія</a>
@@ -55,7 +52,7 @@
             </li>
             <li class="contacts__item">
               <a class="contacts__link link" href="tel:+380961111111">
-                <svg class="contacts__icon" width="10" height="16">
+                <svg class="co ntacts__icon" width="10" height="16">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -63,45 +60,62 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="modal-button" data-modal-open>
+          <svg class="modal-class-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
 
-        <button type="button" class="menu-open-btn">0</button>
-      </div>
+        <div class="header-backdrop" data-modal>
+          <div class="header-modal">
+            <button type="button" class="modal-button-close" data-modal-close>
+              <svg class="modal-class-icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <div class="contact-modal">
+              <ul class="contact list">
+                <li class="contact__item">
+                  <a
+                    class="contact__link link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    <svg class="contact__icon" width="16" height="12">
+                      <use href="./images/symbol-defs.svg#icon-tel"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link link" href="tel:+380961111111">
+                    <svg class="co ntacts__icon" width="10" height="16">
+                      <use
+                        href="./images/symbol-defs.svg#icon-smartphone"
+                      ></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-      <!-- <div class="mob-menu">
-        <div class="container">
-          <button type="button" class="mob-menu_close-btn">X</button>
-          <ul class="mob-item list">
-            <li class="mob-item__list">
-              <a class="mob-item__link current link" href="x">Студія</a>
-            </li>
-            <li class="mob-item__list">
-              <a class="mob-item__link link" href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="mob-item__list">
-              <a class="mob-item__link link" href="x">Контакти</a>
-            </li>
-          </ul>
-          <ul class="contact list">
-            <li class="contact__item">
-              <a class="contact__link link" href="mailto:info@devstudio.com">
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-tel"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contact__item">
-              <a class="contact__link link" href="tel:+380961111111">
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div> -->
+            <div class="navigation">
+              <ul class="nav-item list">
+                <li class="nav-item__list">
+                  <a class="nav-item__link current link" href="x">Студія</a>
+                </li>
+                <li class="nav-item__list">
+                  <a class="nav-item__link link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="nav-item__list">
+                  <a class="nav-item__link link" href="x">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
