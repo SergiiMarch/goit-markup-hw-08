@@ -266,14 +266,18 @@ img {
 }
 
 .contact-mob__item {
-  font-style: normal;
+  margin-bottom: 64px;
+}
+
+.contact-mob__mail {
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
-.contact-mob__item:hover, .contact-mob__item:focus {
+.contact-mob__mail:hover, .contact-mob__mail:focus {
   color: var(--acent-color);
 }
 
@@ -282,7 +286,7 @@ img {
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: #2196f3;
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .contact-mob__link:hover, .contact-mob__link:focus {
@@ -300,8 +304,8 @@ img {
   top: 0;
   left: 0;
   background-color: #fff;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 1;
   padding: 48px 40px;
 }
@@ -333,6 +337,26 @@ img {
   border: none;
   padding: 0;
   fill: currentColor;
+}
+
+.modal-social {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.modal-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  padding-right: 10px;
+}
+
+.modal-social__link > a {
+  color: var(--acent-color);
+  text-decoration: none;
 }
 
 .section-hero {
