@@ -1,23 +1,19 @@
 .client-titlle {
-  display: block;
-  margin-bottom: 50px;
-  padding-top: 60px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  // font-size: 36px;
   font-size: 28px;
-  line-height: 1.17;
-
+  line-height: 1.179;
+  margin-bottom: 30px;
+  color: var(--primary-text-color);
   text-align: center;
-  letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.167;
+    margin-bottom: 50px;
+  }
 }
 
 .client-item {
   display: flex;
   gap: 30px;
-  padding-bottom: 60px;
-
   flex-wrap: wrap;
 
   list-style: none;
@@ -25,18 +21,18 @@
 
 .client-list {
   align-items: center;
-  width: calc((100% - 30px) / 2);
+  width: calc((100% - 30px * 1) / 2);
   @media screen and (min-width: 768px) {
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 30px * 2) / 3);
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 30px * 5) / 6);
   }
 }
 
 .client-link {
   display: flex;
-  width: 210px;
+
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -56,12 +52,10 @@
 
   @media screen and (min-width: 768px) {
     width: 226px;
-    height: 92px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 170px;
-    height: 92px;
   }
 }
 

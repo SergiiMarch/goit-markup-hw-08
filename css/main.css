@@ -87,9 +87,8 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   width: auto;
-  outline: 2px solid tomato;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
     max-width: 480px;
   }
@@ -319,11 +318,6 @@ img {
   background-color: transparent;
   border: none;
 }
-@media screen and (min-width: 480px) {
-  .modal-button {
-    max-width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .modal-button {
     display: none;
@@ -358,6 +352,11 @@ img {
   color: var(--acent-color);
 }
 
+.contact-mob__link:hover,
+.contact-mob__link:focus {
+  color: var(--acent-color);
+}
+
 .contact-mob__icon {
   fill: currentColor;
   margin-right: 10px;
@@ -368,7 +367,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: var(--white-text-color);
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -387,8 +386,8 @@ img {
   padding-left: 40px;
   padding: 40px;
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 1;
   background-color: var(--white-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -407,6 +406,7 @@ img {
   border: none;
   padding: 0;
   fill: currentColor;
+  cursor: pointer;
 }
 
 .modal-social {
@@ -424,19 +424,30 @@ img {
   padding-right: 10px;
 }
 
+.modal-social__link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .modal-social__link > a {
   color: var(--acent-color);
   text-decoration: none;
 }
 
+.modal-social__link > a:focus,
+.modal-social__link > a:hover {
+  color: var(--title-text-color);
+}
+
 .section-hero {
-  max-width: 480px;
-  min-height: 400px;
-  padding: 118px 60px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: var(--hero-gradient), url(../imghero/Header1x.jpg);
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-image: var(--hero-gradient), url(../imghero/Header1x.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
@@ -471,15 +482,16 @@ img {
 }
 
 .hero__title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
   font-weight: 900;
-  font-size: 14px;
-  line-height: 1.61;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.364;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
+  max-width: 360px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--white-text-color);
 }
 @media screen and (min-width: 768px) {
@@ -497,16 +509,15 @@ img {
 }
 
 .hero__btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 24px;
-  font-style: normal;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   letter-spacing: 0.06em;
-  min-width: 160px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
   cursor: pointer;
   color: var(--white-text-color);
   background-color: var(--acent-color);
@@ -534,6 +545,7 @@ img {
 }
 
 .advantages-item__list {
+  margin-bottom: 30px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -543,7 +555,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .advantages-item__list {
-    width: calc((100% - 60px) / 4);
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -759,22 +771,23 @@ img {
 }
 
 .client-titlle {
-  display: block;
-  margin-bottom: 50px;
-  padding-top: 60px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   font-size: 28px;
-  line-height: 1.17;
+  line-height: 1.179;
+  margin-bottom: 30px;
+  color: var(--primary-text-color);
   text-align: center;
-  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .client-titlle {
+    font-size: 36px;
+    line-height: 1.167;
+    margin-bottom: 50px;
+  }
 }
 
 .client-item {
   display: flex;
   gap: 30px;
-  padding-bottom: 60px;
   flex-wrap: wrap;
   list-style: none;
 }
@@ -796,7 +809,6 @@ img {
 
 .client-link {
   display: flex;
-  width: 210px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -813,13 +825,11 @@ img {
 @media screen and (min-width: 768px) {
   .client-link {
     width: 226px;
-    height: 92px;
   }
 }
 @media screen and (min-width: 1200px) {
   .client-link {
     width: 170px;
-    height: 92px;
   }
 }
 

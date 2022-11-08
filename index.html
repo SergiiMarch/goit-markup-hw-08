@@ -61,72 +61,72 @@
             </li>
           </ul>
         </div>
-        <div class="page-list"></div>
+
         <button type="button" class="modal-button" data-headermodal-open>
           <svg class="modal-class-icon" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
           </svg>
         </button>
+      </div>
 
-        <div class="header-backdrop" data-headermodal>
-          <div class="headermodal">
-            <button
-              type="button"
-              class="modal-button-close"
-              data-headermodal-close
-            >
-              <svg class="modal-class-icon" width="40" height="40">
-                <use href="./images/symbol-defs.svg#icon-close-black"></use>
-              </svg>
-            </button>
+      <div class="header-backdrop is-hidden" data-headermodal>
+        <div class="headermodal container">
+          <button
+            type="button"
+            class="modal-button-close"
+            data-headermodal-close
+          >
+            <svg class="modal-class-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
 
-            <div class="navigation">
-              <ul class="nav-item list">
-                <li class="nav-item__list">
-                  <a class="nav-item__link current link" href="x">Студія</a>
-                </li>
-                <li class="nav-item__list">
-                  <a class="nav-item__link link" href="./portfolio.html"
-                    >Портфоліо</a
-                  >
-                </li>
-                <li class="nav-item__list">
-                  <a class="nav-item__link link" href="x">Контакти</a>
-                </li>
-              </ul>
-            </div>
-            <div class="contact-modal">
-              <ul class="contact-mob list">
-                <li class="contact-mob__item">
-                  <a
-                    class="contact-mob__mail link"
-                    href="mailto:info@devstudio.com"
-                  >
-                    info@devstudio.com</a
-                  >
-                </li>
-                <li class="contact-mob__item">
-                  <a class="contact-mob__link link" href="tel:+380961111111">
-                    +38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
+          <div class="navigation">
+            <ul class="nav-item list">
+              <li class="nav-item__list">
+                <a class="nav-item__link current link" href="x">Студія</a>
+              </li>
+              <li class="nav-item__list">
+                <a class="nav-item__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav-item__list">
+                <a class="nav-item__link link" href="x">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-modal">
+            <ul class="contact-mob list">
+              <li class="contact-mob__item">
+                <a class="contact-mob__link link" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="contact-mob__item">
+                <a
+                  class="contact-mob__mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
 
-              <ul class="modal-social list">
-                <li class="modal-social__link">
-                  <a href="#">Instagram</a>
-                </li>
-                <li class="modal-social__link">
-                  <a href="#">Twitter</a>
-                </li>
-                <li class="modal-social__link">
-                  <a href="#">Facebook</a>
-                </li>
-                <li class="modal-social__link">
-                  <a href="#">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="modal-social list">
+              <li class="modal-social__link">
+                <a href="#">Instagram</a>
+              </li>
+              <li class="modal-social__link">
+                <a href="#">Twitter</a>
+              </li>
+              <li class="modal-social__link">
+                <a href="#">Facebook</a>
+              </li>
+              <li class="modal-social__link">
+                <a href="#">LinkedIn</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@
     <!----------------------------MAIN-->
     <main class="main">
       <section class="section-hero">
-        <div class="hero container">
+        <div class="hero">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__btn" type="button" data-modal-open>
             Замовити послугу
@@ -204,6 +204,13 @@
           <h2 class="box-title">Чим ми займаємося</h2>
           <ul class="box-items list">
             <li class="section-images">
+              <picture>
+                <source
+                  srcset="./imghero/work11x.jpg 1x, ./imghero/work12x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+              </picture>
+
               <img
                 class="box-img"
                 src="./images/imgcom.jpg"
@@ -216,6 +223,12 @@
               </div>
             </li>
             <li class="section-images">
+              <picture>
+                <source
+                  srcset="./imghero/work21x.jpg 1x, ./imghero/work22x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <img
                 class="box-img"
                 src="./images/imgmob.jpg"
@@ -228,6 +241,12 @@
               </div>
             </li>
             <li class="section-images">
+              <picture>
+                <source
+                  srcset="./imghero/work31x.jpg 1x, ./imghero/work32x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <img
                 class="box-img"
                 src="./images/box.jpg"

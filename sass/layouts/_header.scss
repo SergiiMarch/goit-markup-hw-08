@@ -205,10 +205,6 @@
   right: 15px;
   background-color: transparent;
   border: none;
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
-
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -267,6 +263,11 @@
   }
 }
 
+.contact-mob__link:hover,
+.contact-mob__link:focus {
+  color: var(--acent-color);
+}
+
 .contact-mob__icon {
   //   box-sizing: border-box;
   fill: currentColor;
@@ -278,7 +279,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: var(--white-text-color);
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -297,8 +298,8 @@
   padding: 40px;
 
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 
   background-color: var(--white-text-color);
@@ -320,6 +321,7 @@
   border: none;
   padding: 0;
   fill: currentColor;
+  cursor: pointer;
 }
 .modal-social {
   display: flex;
@@ -336,7 +338,16 @@
   padding-right: 10px;
 }
 
+.modal-social__link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .modal-social__link > a {
   color: var(--acent-color);
   text-decoration: none;
+}
+
+.modal-social__link > a:focus,
+.modal-social__link > a:hover {
+  color: var(--title-text-color);
 }
