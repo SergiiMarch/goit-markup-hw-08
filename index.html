@@ -76,17 +76,12 @@
       </div>
 
       <div class="header-backdrop is-hidden" data-headermodal>
+        <button type="button" class="modal-button-close" data-headermodal-close>
+          <svg class="modal-class-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
         <div class="headermodal container">
-          <button
-            type="button"
-            class="modal-button-close"
-            data-headermodal-close
-          >
-            <svg class="modal-class-icon" width="40" height="40">
-              <use href="./images/symbol-defs.svg#icon-close-black"></use>
-            </svg>
-          </button>
-
           <div class="navigation">
             <ul class="nav-item list">
               <li class="nav-item__list">
@@ -774,7 +769,8 @@
               <span class="icon-span"></span>
 
               <span class="field-list">Погоджуюся з розсилкою та приймаю</span>
-              <span class="expulcion-list">Умови договору</span>
+              <!-- <span class="expulcion-list">Умови договору</span> -->
+              <a href="X" class="expulcion-list">Умови договору</a>
             </label>
           </div>
           <button type="submit" class="form-buttom">Відправити</button>
